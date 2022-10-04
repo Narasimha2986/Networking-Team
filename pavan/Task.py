@@ -17,4 +17,3 @@ print("Top two titles with most number of comments")
 print("*******************************************")
 for rec in sorted_records[0:2]:
     print(rec["title"] + "-" +  str(rec["num_comments"]))
-pavan
