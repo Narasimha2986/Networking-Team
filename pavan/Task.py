@@ -5,7 +5,7 @@ page_count = 1
 records = []
 
 # total pages - 5
-while page_count < 6   
+for page_count in range(6):   
 response = requests.get(f"https://jsonmock.hackerrank.com/api/articles?page={page_count}")
     response = response.json()
     records.extend(response["data"])
