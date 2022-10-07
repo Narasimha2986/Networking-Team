@@ -1,3 +1,7 @@
+page_count = 1
+records = []
+
+# total pages - 2
 
 while page_count < 3:
     response = requests.get(f"https://jsonmock.hackerrank.com/api/article_users?page={page_count}")
